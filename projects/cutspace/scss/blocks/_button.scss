@@ -1,0 +1,20 @@
+.button {
+  font-weight: bold;
+  line-height: 24px;
+  color: $basic-white;
+  letter-spacing: normal;
+
+  border: none;
+  background: #f78434;
+  border-radius: 29px;
+
+  transition: opacity 0.3s ease-in-out;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

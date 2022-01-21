@@ -1,0 +1,61 @@
+.features {
+  margin-bottom: 171px;
+
+  text-align: center;
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 58px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(259px, 1fr));
+    gap: 26px;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  &__list-link {
+    display: block;
+
+    text-decoration: none;
+    color: inherit;
+
+    transition: all 0.3s ease-in-out;
+
+    svg {
+      margin-bottom: 15px;
+    }
+
+    &:hover {
+      path {
+        fill: $basic-white;
+      }
+
+      circle {
+        fill: $basic-orange;
+        fill-opacity: 1;
+      }
+
+      ellipse {
+        fill: $basic-white;
+      }
+    }
+  }
+
+  &__list-title {
+    margin-top: 0;
+    margin-bottom: 2px;
+
+    font-size: 28px;
+    line-height: 42px;
+    letter-spacing: 0.5px;
+  }
+
+  &__list-text {
+    margin: 0;
+  }
+}

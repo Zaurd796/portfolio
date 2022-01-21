@@ -1,0 +1,78 @@
+.first {
+  margin-bottom: 100px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__content {
+    max-width: 560px;
+  }
+
+  &__title {
+    position: relative;
+
+    margin-top: 0;
+    margin-bottom: 25px;
+    margin-right: -80px;
+
+    font-size: 54px;
+    line-height: 79px;
+    letter-spacing: 0.8px;
+  }
+
+  &__descr {
+    max-width: 467px;
+    margin-top: 0;
+    margin-bottom: 42px;
+  }
+
+  &__form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 459px;
+    padding-left: 28px;
+
+    background: $basic-white;
+    box-shadow: 0px 17px 42px rgba(0, 0, 0, 0.12);
+    border-radius: 29px;
+
+    &::before {
+      display: block;
+      width: 24px;
+      height: 19px;
+
+      background-image: url("../images/mail-icon.svg");
+      background-repeat: no-repeat;
+
+      content: "";
+    }
+  }
+
+  &__input {
+    padding: 0 10px 0 29px;
+
+    color: inherit;
+
+    background-color: transparent;
+    border: none;
+
+    &::placeholder {
+      font-family: inherit;
+      font-size: 16px;
+      line-height: 24px;
+      color: $basic-grey;
+    }
+  }
+
+  &__button {
+    padding: 18px 37px 16px;
+  }
+
+  &__img {
+    border-radius: 40px 40px 40px 0px;
+  }
+}

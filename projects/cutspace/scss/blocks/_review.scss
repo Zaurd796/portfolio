@@ -1,0 +1,81 @@
+.review {
+  position: relative;
+
+  max-width: 350px;
+
+  &:hover {
+    box-shadow: 0px 10px 52px rgba(0, 0, 0, 0.08);
+    .review__button {
+      opacity: 1;
+
+      transform: translateY(0);
+    }
+
+    .review__city {
+      color: $basic-orange;
+    }
+  }
+
+  &__img-box {
+    position: relative;
+
+    max-width: 350px;
+  }
+
+  &__img-box_last::before {
+    position: absolute;
+    top: -40px;
+    right: -10px;
+
+    width: 80px;
+    height: 80px;
+
+    background: url("../images/reviews-icon.svg") no-repeat;
+    content: "";
+  }
+
+  &__img {
+    border-radius: 5px 5px 0px 0px;
+  }
+
+  &__button {
+    position: absolute;
+    top: 134px;
+    right: 20px;
+
+    padding: 0;
+
+    border: none;
+    background-color: transparent;
+    opacity: 0;
+
+    transform: translateY(50%);
+    transition: all 0.3s ease-in-out;
+  }
+
+  &__blockquote {
+    margin: 0;
+    padding: 31px 29px;
+  }
+
+  &__text {
+    max-width: 295px;
+    margin-top: 0;
+    margin-bottom: 23px;
+  }
+
+  &__author {
+    margin-bottom: 1px;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 0.6px;
+  }
+
+  &__city {
+    margin: 0;
+
+    color: $basic-light-blue;
+  }
+}

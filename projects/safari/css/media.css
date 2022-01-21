@@ -1,0 +1,361 @@
+@media (max-width: 1150px) {
+  .premium__list-term {
+    font-size: 45px;
+    line-height: 55px;
+  }
+
+  .premium__list-item {
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 1140px) {
+  .header__list {
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  .header__list-link {
+    padding: 27px 30px 24px;
+  }
+
+  .places__list {
+    justify-content: center;
+  }
+
+  .places__list-item:nth-child(4n) {
+    margin-right: 32px;
+  }
+}
+
+@media (max-width: 1025px) {
+  .premium__content-box {
+    display: block;
+  }
+
+  .premium__content {
+    max-width: unset;
+    margin-right: 0;
+  }
+
+  .premium__content_right .premium__content-text {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 990px) {
+  .info__inner {
+    flex-wrap: wrap;
+  }
+
+  .info__title {
+    text-align: center;
+  }
+
+  .info__text {
+    text-align: center;
+  }
+
+  .info__content {
+    max-width: unset;
+    margin-bottom: 15px;
+  }
+
+  .info__video {
+    max-width: unset;
+  }
+
+  .info__link {
+    display: block;
+
+    text-align: center;
+  }
+}
+
+@media (max-width: 910px) {
+  .premium__list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .premium__list-item {
+    margin-right: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 860px) {
+  .popular__list {
+    grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
+  }
+
+  .popular__item:nth-child(3) {
+    grid-column: unset;
+    grid-row: unset;
+  }
+
+  .popular__item:nth-child(6) {
+    grid-column: unset;
+    grid-row: unset;
+  }
+
+  .popular__list-title_big {
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  .popular__list-text {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 841px) {
+  .booking__input {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 780px) {
+  .header__text {
+    display: none;
+  }
+}
+
+@media (max-width: 755px) {
+  .gallery__content {
+    display: block;
+  }
+
+  .gallery__content-link {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .gallery__img {
+    width: 100%;
+  }
+
+  .booking__button-box {
+    display: block;
+  }
+
+  .booking__checkbox-label {
+    display: block;
+
+    text-align: center;
+  }
+
+  .booking__button {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 680px) {
+  .header__list-link {
+    padding: 27px 15px 24px;
+  }
+
+  .main-title {
+    font-size: 55px;
+    line-height: 70px;
+  }
+
+  .iframe {
+    height: 400px;
+  }
+
+  .footer__inner {
+    display: block;
+    text-align: center;
+  }
+
+  .footer__logo {
+    margin-bottom: 47px;
+  }
+
+  .copyright,
+  .address {
+    margin-bottom: 15px;
+  }
+
+  .premium__title {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
+@media (max-width: 620px) {
+  .premium__list {
+    display: block;
+  }
+
+  .premium__list-item {
+    margin-right: 0;
+  }
+
+  .premium__list-item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 595px) {
+  .places__list-item {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .places__list-item:nth-child(4n) {
+    margin-right: 0;
+  }
+
+  .places__img {
+    width: 100%;
+    height: auto;
+  }
+
+  .places__descr {
+    text-align: center;
+  }
+}
+
+@media (max-width: 550px) {
+  .header__top {
+    display: block;
+
+    border: none;
+  }
+
+  .header__bottom {
+    border: none;
+  }
+
+  .header__logo {
+    margin-bottom: 15px;
+  }
+
+  .header__button {
+    display: block;
+    max-width: 212px;
+    margin: 0 auto;
+  }
+
+  .header__list {
+    display: none;
+  }
+
+  .header__list.active {
+    position: absolute;
+    top: 78px;
+    left: 0;
+
+    display: block;
+    width: 100%;
+
+    text-align: center;
+
+    background: #886239;
+
+  }
+
+  .header__list-link {
+    padding: 15px;
+  }
+
+  .first {
+    margin-bottom: 50px;
+  }
+
+  .first__text {
+    margin: 0 auto 20px;
+    color: #fff;
+
+    text-align: center;
+  }
+
+  .first__button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main-title {
+    margin-bottom: 255px;
+  }
+
+  .menu-btn {
+    display: block;
+    top: 24px;
+    right: 10px;
+  }
+}
+
+@media (max-width: 539px) {
+  .features__list {
+    display: block;
+  }
+
+  .features__text {
+    text-align: center;
+  }
+
+  .features__list-item {
+    margin-bottom: 20px;
+
+    background-position: center 0;
+  }
+}
+
+@media (max-width: 455px) {
+  .logo__icon {
+    width: 64px;
+    height: 60px;
+  }
+
+  .gallery__top {
+    display: block;
+
+    text-align: center;
+  }
+}
+
+@media (max-width: 430px) {
+  .premium__list-term {
+    font-size: 35px;
+    line-height: 45px;
+  }
+}
+
+@media (max-width: 395px) {
+  .features {
+    margin-bottom: 50px;
+  }
+
+  .main-title {
+    margin-bottom: 155px;
+  }
+
+  .popular {
+    margin-bottom: 50px;
+  }
+
+  .map {
+    margin-bottom: 50px;
+  }
+
+  .info {
+    margin-bottom: 50px;
+  }
+
+  .gallery {
+    margin-bottom: 50px;
+  }
+
+  .premium {
+    margin-bottom: 50px;
+  }
+
+  .footer {
+    padding: 40px 0;
+  }
+}

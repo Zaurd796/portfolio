@@ -1,0 +1,35 @@
+.gallery {
+  margin-bottom: 100px;
+  padding: 49px 0 74px;
+
+  background: #886239;
+}
+
+.gallery__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 39px;
+}
+
+.gallery__title {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 47px;
+  color: #ffffff;
+}
+
+.gallery__link {
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+}
+
+.gallery__content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(352px, 1fr));
+  gap: 32px;
+}

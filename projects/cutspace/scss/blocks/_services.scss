@@ -1,0 +1,92 @@
+.services {
+  margin-bottom: 154px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__img-box {
+    position: relative;
+
+    display: flex;
+
+    padding-right: 46px;
+  }
+
+  &__img_first {
+    margin-right: 32px;
+
+    border-radius: 20px 20px 0px 20px;
+  }
+
+  &__img_second {
+    border-radius: 20px 20px 0px 20px;
+  }
+
+  &__box {
+    position: absolute;
+    right: 0;
+    bottom: 87px;
+
+    padding: 32px 29px 32px 0;
+
+    background: $basic-white;
+    box-shadow: 4px 20px 42px -2px rgba(0, 0, 0, 0.12);
+    border-radius: 15px;
+
+    &::before {
+      position: absolute;
+      left: 29px;
+
+      width: 45px;
+      height: 45px;
+
+      background: url("../images/building.svg") no-repeat;
+      content: "";
+    }
+  }
+
+  &__box-title {
+    margin: 0;
+    padding-left: 94px;
+
+    font-weight: bold;
+    line-height: 24px;
+    letter-spacing: 0.8px;
+  }
+
+  &__box-subtitle {
+    max-width: 177px;
+    margin: 0;
+    padding-left: 94px;
+    box-sizing: content-box;
+  }
+
+  &__content {
+    max-width: 374px;
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  &__text_first {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  &__text_second {
+    margin-top: 0;
+    margin-bottom: 41px;
+  }
+
+  &__button {
+    display: inline-block;
+    padding: 18px 39px 16px;
+
+    text-decoration: none;
+  }
+}

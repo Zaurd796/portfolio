@@ -1,0 +1,76 @@
+.serve {
+  margin-bottom: 113px;
+
+  text-align: center;
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    margin-top: 0;
+    margin-bottom: 45px;
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content {
+    max-width: 540px;
+    padding: 40px 88px 39px;
+
+    background: $basic-white;
+    border-radius: 29px;
+
+    &_first {
+      margin-right: 30px;
+    }
+
+    &:hover {
+      background-color: $accent;
+
+      color: $basic-white;
+
+      .serve__icon_first path {
+        fill: $basic-white;
+      }
+
+      .serve__icon_second path {
+        fill: $basic-white;
+      }
+
+      .serve__button {
+        background-color: $basic-white;
+      }
+    }
+  }
+
+  &__icon {
+    margin-bottom: 15px;
+  }
+
+  &__icon_first path {
+    fill: $accent;
+  }
+
+  &__content-title {
+    margin: 0;
+  }
+
+  &__content-text {
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
+
+  &__button {
+    padding: 18px 39px 16px;
+
+    color: $accent;
+    text-decoration: none;
+
+    background-color: transparent;
+  }
+}

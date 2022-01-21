@@ -1,0 +1,65 @@
+.first {
+  margin-bottom: 100px;
+  padding-bottom: 14px;
+
+  background-image: url("../images/first-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 1px solid #c4c4c4;
+}
+
+.main-title {
+  margin-top: 0;
+  margin-bottom: 400px;
+  padding-top: 210px;
+
+  font-family: "PT Serif", "Times New Roman", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 90px;
+  line-height: 117px;
+  text-align: center;
+}
+
+.first__text {
+  max-width: 422px;
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.first__button {
+  display: block;
+  width: 250px;
+  padding: 19px 54px;
+  margin-bottom: 19px;
+
+  transition: all 0.5s ease;
+}
+
+.first__button:hover {
+  opacity: 0.6;
+}
+
+.first__button:active {
+  opacity: 0.3;
+}
+
+.button-down {
+  display: block;
+
+  text-align: center;
+}
+
+.button-down:hover path:nth-child(3) {
+  stroke: black;
+}
+
+.button-down:active path:nth-child(1),
+.button-down:active path:nth-child(2) {
+  stroke: blue;
+}

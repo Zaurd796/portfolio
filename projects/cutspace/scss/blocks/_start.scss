@@ -1,0 +1,96 @@
+.start {
+  position: relative;
+
+  margin-bottom: 144px;
+
+  &::before {
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 0;
+
+    width: 100%;
+    height: 704px;
+
+    background-color: #f5f6fa;
+    content: "";
+  }
+
+  &__inner {
+    display: flex;
+
+    background-color: $basic-blue;
+    background-image: url("../images/start-oval-bottom.svg"),
+      url("../images/start-oval-top.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 50% bottom, top right;
+    border-radius: 20px;
+  }
+
+  &__img-box {
+    margin-right: 96px;
+    margin-top: 59px;
+  }
+
+  &__img {
+    width: 531px;
+
+    box-sizing: content-box;
+
+    border-top: 25px solid $basic-white;
+    border-right: 24px solid $basic-white;
+    box-shadow: 4px 20px 42px -2px rgba(0, 0, 0, 0.12);
+    border-radius: 0 21.6px 0 0;
+  }
+
+  &__content {
+    max-width: 364px;
+    margin-top: 100px;
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 15px;
+
+    color: $basic-white;
+  }
+
+  &__descr {
+    margin-top: 0;
+    margin-bottom: 30px;
+
+    color: $basic-white;
+  }
+
+  &__button_first {
+    display: inline-block;
+    margin-right: 16px;
+    padding: 18px 40px 16px 41px;
+
+    text-decoration: none;
+  }
+
+  &__button_second {
+    position: relative;
+
+    display: inline-block;
+    padding: 18px 29px 16px 49px;
+
+    color: $basic-black;
+    text-decoration: none;
+
+    background: $basic-white;
+
+    &::before {
+      position: absolute;
+      left: 30px;
+      top: 23px;
+
+      width: 11px;
+      height: 12px;
+
+      background: url("../images/play-icon.svg") no-repeat;
+      content: "";
+    }
+  }
+}

@@ -1,0 +1,454 @@
+@media (max-width: 1290px) {
+  .services__img {
+    width: 300px;
+  }
+
+}
+
+@media (max-width: 1115px) {
+  .services__inner {
+    flex-direction: column;
+  }
+
+  .services__img-box {
+    margin-bottom: 40px;
+  }
+
+  .services__title {
+    font-size: 35px;
+    line-height: 50px;
+  }
+
+  .services__content {
+    max-width: unset;
+
+    text-align: center;
+  }
+}
+
+@media (max-width: 1066px) {
+  .first__inner {
+    align-items: initial;
+  }
+
+  .first__content {
+    padding-top: 50px;
+  }
+
+  .first__title {
+    margin-right: 0;
+
+    font-size: 45px;
+    line-height: 55px;
+  }
+
+  .start__img-box {
+    margin-right: 40px;
+  }
+}
+
+@media (max-width: 958px) {
+  .start {
+    margin-bottom: 100px;
+  }
+
+  .start__inner {
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    background-image: unset;
+  }
+
+  .start__img-box {
+    margin-top: 0;
+    margin-right: 0;
+  }
+
+  .start__img {
+    width: 100%;
+    height: 400px;
+
+    object-fit: cover;
+    border-right: unset;
+  }
+
+  .start__content {
+    max-width: unset;
+    margin-top: 0;
+    padding-top: 50px;
+
+    text-align: center;
+  }
+
+  .footer__items {
+    margin-right: 50px;
+  }
+}
+
+@media (max-width: 920px) {
+  .first__inner {
+    display: block;
+  }
+
+  .first__content {
+    max-width: unset;
+
+    text-align: center;
+  }
+
+  .first__descr {
+    max-width: unset;
+  }
+
+  .first__form {
+    margin: 0 auto 20px;
+  }
+
+  .first__img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 875px) {
+  .header__nav {
+    display: block;
+
+    text-align: center;
+  }
+
+  .header__logo {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+
+  .header__list {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 854px) {
+  .services {
+    margin-bottom: 100px;
+  }
+
+  .services__img-box {
+    display: block;
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .services__img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    margin-right: 0;
+
+    object-fit: cover;
+
+    &_first {
+      margin-bottom: 20px;
+    }
+  }
+
+  .services__box {
+    bottom: 0;
+  }
+
+  .footer__inner {
+    display: block;
+  }
+
+  .footer__content {
+    max-width: unset;
+    margin-bottom: 40px;
+
+    text-align: center;
+  }
+
+  .footer__socials {
+    justify-content: center;
+  }
+
+  .footer__box {
+    max-width: unset;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .reviews__row {
+    display: block;
+
+    text-align: center;
+  }
+
+  .reviews__title {
+    max-width: unset;
+    margin-bottom: 20px;
+  }
+
+  .reviews__subtitle {
+    max-width: unset;
+  }
+}
+
+@media (max-width: 765px) {
+  .serve__content {
+    padding: 40px 60px 39px;
+  }
+}
+
+@media (max-width: 732px) {
+  .first {
+    margin-bottom: 50px;
+  }
+
+  .first__content {
+    padding-top: 0;
+  }
+
+  .first__title {
+    font-size: 35px;
+    line-height: 45px;
+  }
+}
+
+@media (max-width: 700px) {
+  .header__nav {
+    display: flex;
+  }
+
+  .header__list {
+    display: none;
+  }
+
+  .menu-burger {
+    display: block;
+  }
+
+  .contacts {
+    background-position: calc((50% + 109px)) bottom, calc(50% + 66px) bottom;
+  }
+
+  .first__title {
+    position: static;
+  }
+}
+
+@media (max-width: 650px) {
+  .services__box {
+    padding: 10px 29px 10px 29px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .services__box-title,
+  .services__box-subtitle {
+    padding-left: 0;
+  }
+
+  .serve__content {
+    padding: 29px 30px 29px;
+  }
+}
+
+@media (max-width: 600px) {
+  .start__img {
+    height: 360px;
+  }
+
+  .start__title {
+    font-size: 39px;
+    line-height: 50px;
+  }
+}
+
+@media (max-width: 546px) {
+  .footer {
+    padding-bottom: 45px;
+  }
+
+  .footer__box {
+    flex-direction: column;
+
+    text-align: center;
+  }
+
+  .footer__items {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .footer__items-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .footer__list-item {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 535px) {
+  .start {
+    &::before {
+      height: 1265px;
+    }
+  }
+
+  .serve {
+    margin-bottom: 60px;
+  }
+
+  .serve__title,
+  .serve__content-title {
+    font-size: 35px;
+    line-height: 55px;
+  }
+
+  .serve__box {
+    display: block;
+  }
+
+  .serve__content_first {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 485px) {
+  .first__form {
+    flex-direction: column;
+    padding-top: 10px;
+    padding-left: 0;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .first__input {
+    margin-bottom: 10px;
+  }
+
+  .features {
+    margin-bottom: 60px;
+  }
+
+  .contacts {
+    margin-bottom: 40px;
+
+    text-align: center;
+
+    &::before {
+      height: 458px;
+    }
+  }
+
+  .contacts__title {
+    max-width: unset;
+
+    font-size: 35px;
+    line-height: 45px;
+  }
+
+  .contacts__text {
+    max-width: unset;
+  }
+}
+
+@media (max-width: 426px) {
+  .partners {
+    margin-bottom: 50px;
+  }
+
+  .partners__list {
+    justify-content: center;
+  }
+
+  .partners__list-item {
+    margin-bottom: 15px;
+  }
+
+  .services {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 400px) {
+  .first__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .first__img {
+    height: 400px;
+  }
+
+  .reviews__title {
+    font-size: 35px;
+    line-height: 45px;
+  }
+
+  .reviews__items {
+    display: block;
+  }
+
+  .reviews__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .review {
+    max-width: unset;
+  }
+
+  .review__img-box {
+    max-width: unset;
+
+    &_last::before {
+      display: none;
+    }
+  }
+
+  .review__img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 383px) {
+  .start {
+    margin-bottom: 50px;
+  }
+
+  .start__button_first,
+  .start__button_second {
+    display: block;
+    max-width: 172px;
+    margin: 0 auto;
+  }
+
+  .start__button_first {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 346px) {
+  .contacts {
+    background-position: calc((50% + 58px)) bottom, calc(50% + 66px) bottom;
+  }
+}
+
+
+
+
+
+
+
+
+

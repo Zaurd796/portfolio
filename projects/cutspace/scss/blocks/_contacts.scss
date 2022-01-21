@@ -1,0 +1,52 @@
+.contacts {
+  position: relative;
+
+  margin-bottom: 86px;
+  padding: 211px 0 55px;
+  background-image: url("../images/contacts-girl.png"), url("../images/contacts-oval.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: calc((50% + 202px)) bottom, calc(50% + 169px) bottom;
+
+  &::before {
+    position: absolute;
+    top: 55px;
+    left: 0;
+    z-index: -1;
+
+    width: 100%;
+    height: 492px;
+
+    background-color: $basic-light-blue;
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+    content: "";
+  }
+
+
+
+  &__title {
+    max-width: 359px;
+    margin-top: 0;
+    margin-bottom: 15px;
+
+    color: $basic-white;
+  }
+
+  &__text {
+    max-width: 342px;
+    margin-top: 0;
+    margin-bottom: 30px;
+
+    color: $basic-white;
+  }
+
+  &__button {
+    display: inline-block;
+    padding: 18px 39px 16px 42px;
+
+    line-height: 24px;
+    color: inherit;
+    text-decoration: none;
+
+    background-color: $basic-white;
+  }
+}

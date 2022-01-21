@@ -1,0 +1,193 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+
+  vertical-align: top;
+}
+
+body {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: black;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 940px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  font-size: 35px;
+  line-height: 45px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.about {
+  margin-bottom: 30px;
+}
+
+.about__list {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.about__list-item-wrapper {
+  display: flex;
+}
+
+.about__list-item-wrapper:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.about__list-definition {
+  margin-left: 0;
+}
+
+.about__list-term {
+  margin-right: 20px;
+
+  font-weight: bold;
+}
+
+.about__text {
+  margin: 0;
+}
+
+.skills {
+  margin-bottom: 30px;
+}
+
+.skills__text {
+  margin: 0;
+}
+
+.portfolio {
+  margin-bottom: 30px;
+}
+
+.portfolio a {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.portfolio__text {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.portfolio__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.portfolio__item {
+  margin-bottom: 50px;
+}
+
+.portfolio__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.portfolio__item-text {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.contacts {
+  margin-bottom: 30px;
+}
+
+.contacts a {
+  margin-left: 10px;
+  color: black;
+
+  transition: all 0.3s ease;
+}
+
+.contacts a:hover {
+  text-decoration: none;
+}
+
+.contacts a:active {
+  opacity: 0.5;
+}
+
+.contacts__text {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.diploma a {
+  color: black;
+
+  transition: all 0.3s ease;
+}
+
+.diploma a + a {
+  margin-left: 20px;
+}
+
+.diploma a:hover {
+  text-decoration: none;
+}
+
+.diploma a:active {
+  opacity: 0.5;
+}
+
+@media (max-width: 590px) {
+  .portfolio__item:nth-child(1) .portfolio__wrapper,
+  .portfolio__item:nth-child(3) .portfolio__wrapper {
+    justify-content: center;
+  }
+
+  .portfolio__item:nth-child(4) a,
+  .portfolio__item:nth-child(5) a {
+    text-align: center;
+  }
+
+  .portfolio__item-text,
+  .portfolio__text {
+    text-align: center;
+  }
+}
+
+@media (max-width: 559px) {
+  .diploma a:first-of-type {
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  .diploma a + a {
+    margin-left: 0;
+  }
+}
