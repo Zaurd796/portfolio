@@ -1,148 +1,375 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My portfolio</title>
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
-<body>
-  <div class="container">
-    <h1 class="visually-hidden">Моё портфолио</h1>
-    <section class="portfolio">
-      <h2 class="title portfolio__title">Мои работы</h2>
-      <ul class="portfolio__list">
-        <li class="portfolio__item">
-          <p class="portfolio__item-text">
-            Работы реализованные на курсе по JavaScript от школы Webcademy
-          </p>
-          <p>1. Проект бюджетный калькулятор. Использован подход MVC.</p>
-          <a class="portfolio__item-link" href="projects/calculator/index.html">
-            <img src="img/calc-img.png" alt="">
-          </a>
+<body class="main-content">
+  <header class="container header active" id="home">
+    <div class="header-content">
+      <div class="left-header">
+        <div class="h-shape"></div>
+        <div class="image">
+          <img src="img/hero1.png" alt="">
+        </div>
+      </div>
+      <div class="right-header">
+        <h1 class="name">
+          Привет, Я <br><span>Дышеков Заур.</span><br>
+          frontend-разработчик.
+        </h1>
+        <p>
+          Приветствую Вас на своем сайте-портфолио. Меня зовут Заур. Живу в г.Черкесск. Занимаюсь web-разработкой. Знаю
+          HTML, CSS, JS, React. У меня полностью кроссбраузерная, адаптивная и валидная верстка. В работе использую
+          препроцессоры Less/Sass, сборщик проектов Gulp, Webpack, БЭМ.
+        </p>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="container about" id="about">
+      <div class="main-title">
+        <h2>Обо <span>мне</span></h2>
+      </div>
+      <div class="about-container">
+        <div class="left-about">
+          <h4>Информация обо мне</h4>
           <p>
-            2. Планировщик задач. Реализовано добаление, удаление задач, а также фильтрация задач. Также при добавлении
-            и удалении задач, задачи сохраняются в localStorage.
+            Быстро схватываю новый материал, легко
+            самообучаем. Умение планировать, прогнозировать, хорошие аналитические способности.
+            Готовность к работе в режиме многозадачности, стрессоустойчивость. Прошел проф.
+            обучение в HTML Academy по профилю - готов применить свои знания на практике.
           </p>
-          <a class="portfolio__item-link" href="projects/todo-list/index.html">
-            <img src="img/toDo-img.jpg" alt="">
-          </a>
-          <p>3. Проект Квиз. Реализован функционал перемещения по карточкам, проверки ввода данных, сбора данных с
-            карточек, работы прогресс-бара, подсветки рамок для радио и чекбоксов</p>
-          <a class="portfolio__item-link" href="projects/quiz/index.html">
-            <img src="img/quiz-img.png" alt="">
-          </a>
-        </li>
-        <li class="portfolio__item">
-          <p class="portfolio__item-text">
-            Реализованы табы, слайдер, таймер,
-            отправка формы через AJAX, модальные окнa.
+          <ul>
+            <li>
+              Знание React, React(classes), React(hooks), Redux, Redux(toolkit).
+            </li>
+            <li>
+              Знание HTML, CSS, Sass, Less, Stylus, JS (ES5, ES6).
+            </li>
+            <li>
+              Умение работать с Figma (/Sketch/Adobe XD) для подготовки макетов, коррекции иконок и
+              пр.
+            </li>
+            <li>Умение работать со сборщиком Gulp 4.</li>
+            <li>Умение работать с Git.</li>
+            <li>Навыки работы с консолью.</li>
+            <li>Знание адаптивной верстки (подход Mobile First).</li>
+            <li>Опыт работы с адаптивной графикой.</li>
+            <li>Знание кроссбраузерной, семантической и доступной вёрстки.</li>
+            <li>Владение БЭМ-методологией.</li>
+            <li>Опыт работы с адаптивной графикой.</li>
+          </ul>
+        </div>
+        <div class="right-about">
+          <div class="about-item">
+            <div class="abt-text">
+              <p class="large-text">20+</p>
+              <p class="small-text">Законченных <br /> проектов</p>
+            </div>
+          </div>
+          <div class="about-item">
+            <div class="abt-text">
+              <p class="large-text">1+</p>
+              <p class="small-text">лет <br /> опыта</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about-stats">
+        <h4 class="stat-title">Мои навыки</h4>
+        <div class="progress-bars">
+          <div class="progress-bar">
+            <p class="prog-title">html5</p>
+            <div class="progress-con">
+              <p class="prog-text">80%</p>
+              <div class="progress">
+                <span class="html"></span>
+              </div>
+            </div>
+          </div>
+          <div class="progress-bar">
+            <p class="prog-title">css3</p>
+            <div class="progress-con">
+              <p class="prog-text">75%</p>
+              <div class="progress">
+                <span class="css"></span>
+              </div>
+            </div>
+          </div>
+          <div class="progress-bar">
+            <p class="prog-title">javascript</p>
+            <div class="progress-con">
+              <p class="prog-text">60%</p>
+              <div class="progress">
+                <span class="js"></span>
+              </div>
+            </div>
+          </div>
+          <div class="progress-bar">
+            <p class="prog-title">ReactJS</p>
+            <div class="progress-con">
+              <p class="prog-text">60%</p>
+              <div class="progress">
+                <span class="react"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h4 class="stat-title">Моё био</h4>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="tl-icon">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <p class="tl-duration">август 2021 - октябрь 2022</p>
+          <h5>HTML-верстальщик<span> - студия "Звезда"</span></h5>
+          <p>
+            Верстал макеты в веб-студии "Звезда".
           </p>
-          <a class="portfolio__item-link" href="projects/dist/index.html">
-            <img src="img/dist.jpg" alt="">
-          </a>
-          <p class="portfolio__item-text">
-            Выпускная работа на курсе Ивана Пертриченко по JavaScript. Реализованы табы, слайдер, таймер, калькулятор,
-            отправка формы через AJAX, динамическое построение карточек товара, модально окно.
+        </div>
+        <div class="timeline-item">
+          <div class="tl-icon">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <p class="tl-duration">февраль 2022 - сентябрь 2022</p>
+          <h5>Обучение<span> Курс по JS и React Андея Петриченко</span></h5>
+          <p>
+            Прошел курс по JS и React Андея Петриченко на Udemy.
           </p>
-          <a class="portfolio__item-link" href="projects/food/index.html">
-            <img src="img/food.png" alt="">
-          </a>
-        </li>
-        <li class="portfolio__item">
-          <p class="portfolio__item-text">
-            Это выпускная работа на курсе "HTML и CSS. Адаптивная вёрстка и автоматизация" HTML Академии. Адаптив
-            mobile first.
+        </div>
+        <div class="timeline-item">
+          <div class="tl-icon">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <p class="tl-duration">май 2021 - февраль 2022</p>
+          <h5>Обучение<span> - "HTML Academy".</span></h5>
+          <p>
+            Прошёл два курса по вёрстке в онлайн-школе "HTML Academy".
           </p>
-          <div class="portfolio__wrapper">
-            <a class="portfolio__item-link" href="projects/pink/index.html">
-              <img src="img/pink-1.png" alt="image">
-            </a>
-            <a class="portfolio__item-link" href="projects/pink/form.html">
-              <img src="img/pink-2.png" alt="image">
-            </a>
-            <a class="portfolio__item-link" href="projects/pink/catalog.html">
-              <img src="img/pink-3.png" alt="image">
+        </div>
+        <div class="timeline-item">
+          <div class="tl-icon">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <p class="tl-duration">октябрь 2009 - май 2020</p>
+          <h5>Индивидуальное предпринимательство
+            <span>"Impriano"</span>
+          </h5>
+          <p>
+            Руковдитель строительных проектов в США.
+          </p>
+        </div>
+        <div class="timeline-item">
+          <div class="tl-icon">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <p class="tl-duration">2003 - 2008</p>
+          <h5>Высшее образование<span> - СГУ</span></h5>
+          <p>
+            Получил высшее экономическое и юридическое образование в Ставропольском Государственном Университете.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="container" id="portfolio">
+      <div class="main-title">
+        <h2>Моё <span>Портфолио</span></h2>
+      </div>
+      <p class="port-text">
+        Вот несколько выполненных мной проектов.
+      </p>
+      <div class="portfolios">
+        <!-- <div class="portfolio-item">
+          <div class="image" title="Проект на React, React(hooks)">
+            <a href="projects/build/index.html">
+              <img src="img/marvel.jpg" alt="">
             </a>
           </div>
-        </li>
-        <li class="portfolio__item">
-          <p class="portfolio__item-text">
-            6 страничный сайт. Адаптив desktop first.
-          </p>
-          <div class="portfolio__wrapper">
-            <a class="portfolio__item-link" href="projects/desire/index.html">
-              <img src="img/desire-1.png" alt="image">
-            </a>
-            <a class="portfolio__item-link" href="projects/desire/gallery.html">
-              <img src="img/desire-2.png" alt="image">
-            </a>
-            <a class="portfolio__item-link" href="projects/desire/contacts.html">
-              <img src="img/desire-3.png" alt="image">
-            </a>
-            <a class="portfolio__item-link" href="projects/desire/about.html">
-              <img src="img/desire-4.png" alt="image">
-            </a>
-            <a class="portfolio__item-link" href="projects/desire/blog-one.html">
-              <img src="img/desire-5.png" alt="image">
-            </a>
-            <a class="portfolio__item-link" href="projects/desire/blog.html">
-              <img src="img/desire-6.png" alt="image">
+          <div class="hover-items">
+            <a href="https://github.com/Zaurd796/marvel" class="icon">
+              <i class="fab fa-github"></i>
+              Project Source
             </a>
           </div>
-        </li>
-        <li class="portfolio__item">
-          <p class="portfolio__item-text">
-            Это выпускная работа на курсе "HTML и CSS. Профессиональная вёрстка сайтов" HTML Академии. Адаптив desktop
-            first.
-          </p>
-          <div class="portfolio__wrapper">
-            <a class="portfolio__item-link" href="projects/technomart/index.html">
-              <img src="img/technomart-1.png" alt="image">
-            </a>
-            <a class="portfolio__item-link" href="projects/technomart/catalog.html">
-              <img src="img/technomart-2.png" alt="image">
+        </div> -->
+        <div class="portfolio-item">
+          <div class="image" title="Реализованы табы, слайдер, таймер, отправка формы через AJAX, модальные окнa">
+            <a href="projects/irvasWindows/index.html">
+              <img src="img/irvas-windows.jpg" alt="">
             </a>
           </div>
-        </li>
-        <li class="portfolio__item">
-          <p class="portfolio__item-text">
-            Лендинг. Cutspace. Адаптив desktop first.
-          </p>
-          <a class="portfolio__item-link" href="projects/cutspace/index.html">
-            <img src="img/cutspace.png" alt="image">
-          </a>
-        </li>
-        <li class="portfolio__item">
-          <p class="portfolio__item-text">
-            Лендинг. Safari. Адаптив desktop first.
-          </p>
-          <a class="portfolio__item-link" href="projects/safari/index.html">
-            <img src="img/safari.png" alt="image">
-          </a>
-        </li>
-      </ul>
+          <div class="hover-items">
+            <a href="https://github.com/Zaurd796/irvasWindows" class="icon">
+              <i class="fab fa-github"></i>
+              Project Source
+            </a>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <div class="image"
+            title="Выпускная работа на курсе Ивана Пертриченко по JavaScript. Реализованы табы, слайдер, таймер, калькулятор, отправка формы через AJAX, динамическое построение карточек товара, модально окно.">
+            <a href="projects/food/index.html">
+              <img src="img/project-food.jpg" alt="">
+            </a>
+          </div>
+          <div class="hover-items">
+            <a href="https://github.com/Zaurd796/foodProject" class="icon">
+              <i class="fab fa-github"></i>
+              Project Source
+            </a>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <div class="image" title="Проект бюджетный калькулятор. Использован подход MVC.">
+            <a href="projects/calculator/index.html">
+              <img src="img/calculator.jpg" alt="">
+            </a>
+          </div>
+          <div class="hover-items">
+            <a href="https://github.com/Zaurd796/calculator" class="icon">
+              <i class="fab fa-github"></i>
+              Project Source
+            </a>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <div class="image" title=" Многостраничный сайт. Адаптив desktop first.">
+            <a href="projects/desire/index.html">
+              <img src="img/gulp.jpg" alt="">
+            </a>
+          </div>
+          <div class="hover-items">
+            <a href="https://github.com/Zaurd796/desire" class="icon">
+              <i class="fab fa-github"></i>
+              Project Source
+            </a>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <div class="image"
+            title="Выпускная работа на курсе 'HTML и CSS. Адаптивная вёрстка и автоматизация' HTML Академии. Адаптив mobile first.">
+            <a href="projects/pink/index.html">
+              <img src="img/pink.jpg" alt="">
+            </a>
+          </div>
+          <div class="hover-items">
+            <a href="https://github.com/Zaurd796/1762757-pink-24" class="icon">
+              <i class="fab fa-github"></i>
+              Project Source
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
-    <section class="contacts">
-      <h2 class="title contacts__title">Мои контакты</h2>
-      <p class="contacts__text">Телефон:<a class="contacts__phone" href="tel:+79094930016">+79094930016</a></p>
-      <p class="contacts__text">Email:<a class="contacts__email" href="#!">zaurdysh@gmail.com</a></p>
-      <p class="contacts__text">Мой телеграм: @zaurdysh</p>
+    <section class="container contact" id="contact">
+      <div class="contact-container">
+        <div class="main-title">
+          <h2>Мои <span>контакты</span></h2>
+        </div>
+        <div class="contact-content-con">
+          <div class="left-contact">
+            <div class="contact-info">
+              <div class="contact-item">
+                <div class="icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Адрес</span>
+                </div>
+                <p>
+                  : Черкесск КЧР Россия
+                </p>
+              </div>
+              <div class="contact-item">
+                <div class="icon">
+                  <i class="fas fa-envelope"></i>
+                  <span>Email</span>
+                </div>
+                <p>
+                  <span>: zaurdysh@gmail.com</span>
+                </p>
+              </div>
+              <div class="contact-item">
+                <div class="icon">
+                  <i class="fas fa-user-graduate"></i>
+                  <span>Образование</span>
+                </div>
+                <p>
+                  <span>: СГУ г.Ставрополь</span>
+                </p>
+              </div>
+              <div class="contact-item">
+                <div class="icon">
+                  <i class="fas fa-user-graduate"></i>
+                  <span>мобильный телефон</span>
+                </div>
+                <p>
+                  <a href="tel:89094930016">: 8 (909) 493 00 16</a>
+                </p>
+              </div>
+              <div class="contact-item">
+                <div class="icon">
+                  <span>Telegram</span>
+                </div>
+                <p>
+                  <a href="https://t.me/zaurdysh">@zaurdysh</a>
+                </p>
+              </div>
+              <div class="contact-item">
+                <div class="icon">
+                  <span>Сертификаты</span>
+                </div>
+                <p>
+                  <a href="certificate/проф.вёрстка.pdf">Профессиональная вёрстка</a>
+                  <a href="certificate/адаптивная вёрстка и автоматизация.pdf">Адаптивная вёрстка</a>
+                </p>
+              </div>
+              <div class="contact-item">
+                <div class="icon">
+                  <span>GiHub</span>
+                </div>
+                <p>
+                  <a href="https://github.com/Zaurd796?tab=repositories">
+                    <i class="fab fa-github"></i>
+                    Мой GitHub
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    <section class="diploma">
-      <h2 class="title diploma__title">Свидетельства об окончании курсов</h2>
-      <a class="diploma__link" href="certificate/проф.вёрстка.pdf">Профессиональная вёрстка</a>
-      <a class="diploma__link" href="certificate/адаптивная вёрстка и автоматизация.pdf">Адаптивная вёрстка и
-        автоматизация</a>
-    </section>
-
+  </main>
+  <div class="controls">
+    <div class="control active-btn" data-id="home">
+      <i class="fas fa-home"></i>
+    </div>
+    <div class="control" data-id="about">
+      <i class="fas fa-user"></i>
+    </div>
+    <div class="control" data-id="portfolio">
+      <i class="fas fa-briefcase"></i>
+    </div>
+    <div class="control" data-id="contact">
+      <i class="fas fa-envelope-open"></i>
+    </div>
   </div>
+  <div class="theme-btn">
+    <i class="fas fa-adjust"></i>
+  </div>
+  <script src="app.js"></script>
 </body>
 
 </html>
